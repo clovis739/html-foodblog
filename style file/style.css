@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  background-color: rgb(253, 252, 252);
+  background-color: #eee;
 }
 
 section {
@@ -132,7 +132,7 @@ section {
   right: -110%;
   width: 50rem;
   height: 5rem;
-  background-color: #302b2b;
+  background-color: #fdfcfc;
   border-radius: 5rem;
   overflow: hidden;
   display: flex;
@@ -174,7 +174,7 @@ section {
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
   width: 35rem;
-  background: #c9c4c4;
+  background: #fffefe;
 }
 
 .header .shopping-cart.active {
@@ -244,7 +244,7 @@ section {
   box-shadow: var(--box-shadow);
   padding: 2rem;
   border-radius: 0.5rem;
-  background: #9b9696;
+  background: #ffffff;
   text-align: center;
 }
 
@@ -479,6 +479,157 @@ section {
   font-size: 1.8rem;
 }
 
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  background: #fff;
+}
+
+.blogs .box-container .box img {
+  height: 25rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogs .box-container .box .content {
+  padding: 2rem;
+}
+
+.blogs .box-container .box .content .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.blogs .box-container .box .content .icons a {
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+
+.blogs .box-container .box .content .icons a i:hover {
+  color: var(--black);
+}
+
+.blogs .box-container .box .content .icons a i {
+  color: var(--orange);
+  padding-right: 1.5rem;
+}
+
+.blogs .box-container .box .content h3 {
+  line-height: 1.8;
+  color: var(--black);
+  font-size: 2.2rem;
+  padding: 0.5rem 0;
+}
+
+.blogs .box-container .box .content p {
+  line-height: 1.8;
+  color: var(--light-color);
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.footer {
+  background: #fff;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box {
+  font-size: 2.5rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+  color: var(--orange);
+}
+
+.footer .box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box .links:hover i {
+  color: var(--orange);
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box p {
+  line-height: 1.8;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .hare a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin-left: 0.2rem;
+  background: #eee;
+  text-align: center;
+}
+
+.footer .box-container .box .hare a:hover {
+  background: var(--orange);
+  color: #fff;
+}
+
+.footer .box-container .box .email {
+  width: 100%;
+  margin: 7rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.footer .box-container .box a img {
+  margin-top: 2rem;
+  height: 5rem;
+}
+
+.footer .credited {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  border-top: var(--black);
+}
+
+.footer .credited span {
+  color: var(--orange);
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -522,5 +673,8 @@ section {
   }
   .heading {
     font-size: 2.5rem;
+  }
+  .footer {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
